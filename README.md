@@ -280,46 +280,53 @@ To use the Banking System client application:
 ### Overview
 
 The Banking System has the following file and folder structure
--Server
-    -FinalServer
-        -clienthandler.cpp
-        -clienthandler.h
-        -database.cpp
-        -database.h
-        -FinalServer.pro
-        -FinalServer.pro.user
-        -main.cpp
-        -server.cpp
-        -server.h
+-FinalProject
+    -Server
+        -FinalServer
+            -clienthandler.cpp
+            -clienthandler.h
+            -database.cpp
+            -database.h
+            -FinalServer.pro
+            -FinalServer.pro.user
+            -main.cpp
+            -server.cpp
+            -server.h
 
--Client
-    -FinalClient
-        -client.cpp
-        -client.h
-        -FinalClient.pro
-        -FinalClient.pro.user
-        -main.cpp
-
--Client_GUI
     -Client
-        -client.cpp
-        -client.h
-        -FinalClient.pro
-        -FinalClient.pro.user
-        -main.cpp
-        -mainwindow.cpp
-        -mainwindow.h
-        -mainwindow.ui
+        -FinalClient
+            -client.cpp
+            -client.h
+            -FinalClient.pro
+            -FinalClient.pro.user
+            -main.cpp
+
+    -Client_GUI
+        -Client
+            -client.cpp
+            -client.h
+            -FinalClient.pro
+            -FinalClient.pro.user
+            -main.cpp
+            -mainwindow.cpp
+            -mainwindow.h
+            -mainwindow.ui
+
+    -DB.json
 
 ### Modules
 
 The major modules of the Banking System include:
 
--Client module
--Server module
--ClientHandler module
--Database module
--MainWindow module
+-Client module: This module gets client input and send to server and shows server response.
+
+-Server module: This module starts server and waits for new incomming connection to create new thread and new instance of CLientHandler.
+
+-ClientHandler module: This module creates socket ,read client requests and send server responser.
+
+-Database module: This module handles users and admin requests and save new data to DB.json file.
+
+-MainWindow module: This module responsiple for the GUI client.
 
 ## Troubleshooting
 
