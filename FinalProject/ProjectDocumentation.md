@@ -27,8 +27,7 @@ It is a simple CLI & GUI client-server banking system developed using qt framewo
 
 ### Installation
 
-git clone https://github.com/MinaOsaama/Final-project
-git clone git@github.com:MinaOsaama/Final-project.git
+git clone <https://github.com/MinaOsaama/Final-project>
 
 ### Dependencies
 
